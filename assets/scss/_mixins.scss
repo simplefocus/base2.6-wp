@@ -1,0 +1,16 @@
+//  =============================================================================
+//  Mixins - Compiles with app.scss
+//  =============================================================================
+
+    // Calc() Function
+    // For example:
+    // .test {
+    //   @include calc(width, "25% - 1em");
+    // }
+    
+    @mixin calc($property, $expression) { 
+      #{$property}: -moz-calc(#{$expression}); 
+      #{$property}: -o-calc(#{$expression}); 
+      #{$property}: -webkit-calc(#{$expression}); 
+      #{$property}: calc(#{$expression}); 
+    }
