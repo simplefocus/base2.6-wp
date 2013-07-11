@@ -22,10 +22,10 @@ define('POST_EXCERPT_LENGTH', 40);
 function roots_main_class() {
   if (roots_display_sidebar()) {
     // Classes on pages with the sidebar
-    $class = 'eight columns';
+    $class = 'large-8 columns';
   } else {
     // Classes on full width pages
-    $class = 'twelve columns';
+    $class = 'large-12 columns';
   }
 
   return $class;
@@ -35,7 +35,7 @@ function roots_main_class() {
  * .sidebar classes
  */
 function roots_sidebar_class() {
-  return 'four columns';
+  return 'large-4 columns';
 }
 
 /**
